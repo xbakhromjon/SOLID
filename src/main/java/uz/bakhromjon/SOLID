@@ -1,0 +1,25 @@
+SOLID PRINSPLARI
+1. Single Responsibility:
+    Har bir class aniq bir funksiyani bajarishi kerak.
+    Uni qo'shimcha boshqa funksionalliklar bilan
+    to'ldirmaslik kerak.
+    P.S: Classga hamma narsa tiqavermaslik kerak.
+2. Open Closed
+    Classlar qo'shimchlar uchun ochiq bo'lishi, o'zgarishlar uchun yopiq bo'lishi kerak.
+    Boshqacha qilib aytganda, yangi xususiyat qo'shish uchun mavjud kodni o'zgartirmaslik kerak.
+    P.S: Eski kod yangi kodga: Kelaver, lekin menga tegma.
+
+3. Liskov Substitution
+    Child class parent class ga mos bo'lishi kerak.
+    P.S: Farosatni ishlatib inheritance qilish kerak.
+
+
+4. Interface Segregation
+    Interfacedagi barcha funksionallik uning child classlaridagi funksionalliklar ichida bo'lishi kerak. Katta interfacelarni kichiklariga bo'lish kerak.
+    P.S: Bizda I1 interface va I1 dan imp olgan 10 ta class(C1, C2... C10) bor. I1 da 5 ta funksiya(f1, f2... f5) bor. I1 dagi 3 ta funksiya(f1, f2... f3) 7 class(C1, C2... C7)
+    uchun yaroqli. Qolganlari uchun yaroqsiz. Lekin impl qilingan. 2 ta funksiya(f4, f5) 3 ta class(C8, C9... C10) uchun yaroqli xolos. Lekin qolgan funksiyalar
+    impl qilingan. Bu joyda Interface Segregation qoidasiga amal qilish uchun I1 dagi 2 ta funksiyani I2 interface ga olib o'tish kerak.
+    Va C8, C9... C10 lar I2 dan impl olish kerak.
+
+5. Dependency Inversion
+    Componentalar(Class, funksiya...) abstraksiyaga bog'langan bo'lishi kerak, konkret narsaga emas.
